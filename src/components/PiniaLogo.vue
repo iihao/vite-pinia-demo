@@ -197,7 +197,7 @@
   <el-button style="margin-top: 8px" type="info" @click="iblink" text bg round
     >blink</el-button
   >
-  <el-button style="margin-top: 8px" type="info" @click="italk" text bg round
+  <el-button style="margin-top: 8px;" type="info" @click="italk" text bg round
     >talk</el-button
   >
 </template>

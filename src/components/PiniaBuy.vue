@@ -1,7 +1,10 @@
 <script setup lang="ts">
+import { ElMessage } from 'element-plus'
 import { useCarsStore } from '../store/cars'
 const carsStore = useCarsStore()
-const isBuy = () => {}
+const isBuy = async () => {
+  await carsStore.clickBuy()
+}
 </script>
 
 <template>

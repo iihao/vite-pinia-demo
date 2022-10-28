@@ -1,5 +1,6 @@
+import { ElMessage } from 'element-plus'
 import { defineStore } from 'pinia'
-import { Product } from '../api/shop'
+import { Product, buyProducts } from '../api/shop'
 import { useShopStore } from '../store/products'
 
 type shopCar = {
@@ -10,6 +11,7 @@ export const useCarsStore = defineStore('cars', {
   state: () => {
     return {
       shopCars: [] as shopCar[],
+      buyStatus: null as null | string,
     }
   },
   getters: {
@@ -56,6 +58,25 @@ export const useCarsStore = defineStore('cars', {
       const shopStore = useShopStore()
       //增加库存数量
       await shopStore.addProduct(product.id)
+    },
+
+    async clickBuy() {
+      const ret = await buyProducts()
+      if (ret && this.totalPrice) {
+        this.buyStatus = 'true'
+        ElMessage({
+          message: `The payment is successful, the total amount:${this.totalPrice}`,
+          type: 'success',
+        })
+        //清空购物车
+        this.shopCars = []
+      } else {
+        this.buyStatus = 'false'
+        ElMessage({
+          message: `Payment failed, please try again later`,
+          type: 'warning',
+        })
+      }
     },
   },
 })

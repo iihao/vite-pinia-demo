@@ -21,10 +21,10 @@ shopStore.loadAllProduct() //加载所有数据
       table-layout="auto"
       :data="shopStore.allProduct"
     >
-      <el-table-column prop="goodsName" label="goodsName" width="200" />
-      <el-table-column prop="price" label="price" width="150" />
-      <el-table-column prop="inventory" label="inventory" width="150" />
-      <el-table-column fixed="right" label="Operations" width="120">
+      <el-table-column prop="goodsName" label="GoodsName" width="200" />
+      <el-table-column prop="price" label="Price" width="150" />
+      <el-table-column prop="inventory" label="Inventory" width="150" />
+      <el-table-column fixed="right" label="Action" width="120">
         <template #default="scope">
           <el-button
             type="info"
@@ -46,10 +46,10 @@ shopStore.loadAllProduct() //加载所有数据
       table-layout="auto"
       :data="carsStore.shopCars"
     >
-      <el-table-column prop="goodsName" label="goodsName" width="200" />
-      <el-table-column prop="price" label="price" width="150" />
-      <el-table-column prop="shopCount" label="shopCount" width="150" />
-      <el-table-column fixed="right" label="Operations" width="120">
+      <el-table-column prop="goodsName" label="GoodsName" width="200" />
+      <el-table-column prop="price" label="Price" width="150" />
+      <el-table-column prop="shopCount" label="Quantity" width="150" />
+      <el-table-column fixed="right" label="Action" width="120">
         <template #default="scope">
           <el-button
             type="info"
