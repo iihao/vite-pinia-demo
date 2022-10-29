@@ -18,3 +18,6 @@
 
 ## Style
 <img width="1184" alt="image" src="https://user-images.githubusercontent.com/29720840/198515626-5b20ba5d-9571-4104-99bc-215f38bd36eb.png">
+
+[![HitCount](https://hits.dwyl.com/iihao/vite-pinia-demo.svg?style=flat)](http://hits.dwyl.com/iihao/vite-pinia-demo)
+[![HitCount](https://hits.dwyl.com/iihao/vite-pinia-demo.svg?style=flat&show=unique)](http://hits.dwyl.com/iihao/vite-pinia-demo)
