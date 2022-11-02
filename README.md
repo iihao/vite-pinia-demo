@@ -1,7 +1,7 @@
 # Vue 3 + TypeScript + Vite
 
 ## Pinia 实战案例
-### 1.需求说明
+### 需求说明
 - 商品列表
    - 展示商品列表
    - 添加商品到购物车
@@ -17,3 +17,7 @@
 - [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
 
 ## Style
+<img width="1184" alt="image" src="https://user-images.githubusercontent.com/29720840/198515626-5b20ba5d-9571-4104-99bc-215f38bd36eb.png">
+
+[![HitCount](https://hits.dwyl.com/iihao/vite-pinia-demo.svg?style=flat)](http://hits.dwyl.com/iihao/vite-pinia-demo)
+[![HitCount](https://hits.dwyl.com/iihao/vite-pinia-demo.svg?style=flat&show=unique)](http://hits.dwyl.com/iihao/vite-pinia-demo)
